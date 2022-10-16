@@ -1,2 +1,5 @@
-# inordic-fake-news
-Учебный проект inordic school
+#  Учебный проект inordic-fake-news
+
+##  Фио разработчика:
+
+Подробнее про оформление файла - https://habr.com/ru/post/649363/
