@@ -1,11 +1,16 @@
 <script>
+import axios from 'axios' 
     export default{
         beforeMount: (el) => {
-
+            //сделаем запрос запрос к новостям
+            axios.get('https://fakestoreapi.com/products/1')
+            .then( function(response){
+                console.log(response)
+            })
         },
         data() {
             return {
-                hello: 'hello'
+                title: 'Список новостей'
             }
         },
         setup() {
@@ -16,7 +21,7 @@
     }
 </script>
 <template>
-    <h1>Hello world!</h1>
+    <h1>{{title}}</h1>
 </template>
 <style scoped>
 

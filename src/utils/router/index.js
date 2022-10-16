@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";   
 import HelloWorld from "../../components/HelloWorld.vue";
 import NewsList from "../../components/NewsList.vue";
+import NewsItem from '../../components/NewsItem.vue'
 //создаем роутинг(инструкцию) ((делаем конфигурацию для показа определенного компонента по определенному пути))
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/news',
     name: 'News',
     component: NewsList
+  },
+  {
+    path: '/news/:id',
+    name: 'NewsItem',
+    component: NewsItem
   }
 ];
 //создали сам обьект роутинга 
